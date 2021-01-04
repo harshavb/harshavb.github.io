@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#first_screen {
+	text-align: center;
+	padding: 10%;
+	color: black;
+	font-size: 50px;
+}
+
+/*Navigation Button*/
+#tutorialnav {
+	z-index: 1;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	background-color: #111;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.2s;
+	padding-top: 10px;
+	filter: drop-shadow(5px 0px 1px black);
+}
+
+#tutorialnav a {
+	text-decoration: none;
+	display: block;
+	transition: 0s;
+	color: white;
+	white-space: nowrap;
+}
+
+.majornav {
+	padding: 8px 8px 8px 32px;
+	font-size: 25px;
+}
+
+.minornav {
+	padding: 4px 8px 4px 64px;
+	font-size: 16px;
+}
+
+#tutorialnav a:hover {
+	color: yellow;
+}
+
+#navbtnopen {
+	color: black;
+	position: sticky;
+	z-index: 2;
+	font-size: 36px;
+	cursor: pointer;
+	top: 10px;
+	left: 20px;
+	transition: 0.2s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#navbtncls {
+	color: black;
+	position: sticky;
+	z-index: 1;
+	font-size: 36px;
+	cursor: pointer;
+	left: 20px;
+	transition: 0.2s;
+	opacity: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	top: 10px;
+	left: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+}
+/*End Navigation Button*/

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<title>3D Graphics Tutorial Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" content="3d Graphics Web Tutorials [Homepage]">
+	<meta name="author" content="Harsha Boyilla">
+	<meta name="keywords" content="3D, 3d, 3d graphics, 3D graphics, graphics, tutorial">
+	<link rel="stylesheet" href="styles.css">
+
+<body>
+	<!-- Navigation Menu -->
+	<div id="navigationmenu" class="noselect">
+		<span id="navbtnopen">&#9776;</span>
+		<nav id="tutorialnav">
+			<span id="navbtncls">&#9776;</span>
+			<a href="temp" class="majornav">Part 1</a>
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 2</a>
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 3</a>
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 4</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 5</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 6</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 7</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 8</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 9</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 10</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 11</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 12</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 13</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 14</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 15</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 16</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 17</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 18</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 19</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 20</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+			<a href="temp" class="majornav">Part 21</a>																																																	
+				<a href="temp" class="minornav">Section 1</a>
+				<a href="temp" class="minornav">Section 2</a>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		var navIsOpen = false;
+		window.onload = function() 
+		{
+			document.getElementById("navbtnopen").onclick = function() 
+			{	
+				if(!navIsOpen)
+				{
+					document.getElementById("tutorialnav").style.width = "250px";
+					document.getElementById("navbtnopen").style.transition = "0s";
+					document.getElementById("navbtnopen").style.opacity = "0";
+					document.getElementById("navbtnopen").style.color = "black";
+					document.getElementById("navbtncls").style.opacity = "1";
+					document.getElementById("navbtncls").style.transition = "0.2s";
+					document.getElementById("navbtncls").style.color = "white";
+					navIsOpen = true;
+				}
+				
+				else if(navIsOpen)
+				{
+					document.getElementById("tutorialnav").style.width = "0px"
+					document.getElementById("navbtncls").style.transition = "0s";
+					document.getElementById("navbtncls").style.opacity = "0";
+					document.getElementById("navbtncls").style.color = "white";
+					document.getElementById("navbtnopen").style.opacity = "1";
+					document.getElementById("navbtnopen").style.transition = "0.2s";
+					document.getElementById("navbtnopen").style.color = "black";
+					navIsOpen = false;
+				}
+					return false;
+			}
+		}
+	</script>
+
+	<article id="first_screen">
+		<h2>Welcome to my website!</h2>
+	</article>
+</body>
+
+</html>
